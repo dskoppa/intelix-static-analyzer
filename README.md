@@ -39,7 +39,7 @@ Submit `.exe`, `.docx`, and `.pdf` files for **static analysis** using the [Soph
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/intelix-static-analyzer.git
+git clone https://github.com/dskoppa/intelix-static-analyzer.git
 cd intelix-static-analyzer
 ```
 

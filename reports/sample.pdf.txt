@@ -1,0 +1,476 @@
+{
+  "jobId": "6554d91b1661bb7132d6c4b951f47dcf",
+  "jobStatus": "SUCCESS",
+  "report": {
+    "analysis_subject": {
+      "mime_type": "application/pdf",
+      "sha1": "9c66d2d11a2762c75136b081d0c9e9035eef0fbf",
+      "sha256": "6b22904a7de5b77bf40598c37e94e01771485e1b900651b58bf50af7009f8056"
+    },
+    "analysis_summary": [
+      {
+        "description": "Document contains Compressed Indirect Objects",
+        "name": "edr_contains_compressed_objects",
+        "severity": 1
+      },
+      {
+        "description": "Document linearized for more efficient viewing over the Internet",
+        "name": "edr_contains_linearized_xref",
+        "severity": 1
+      },
+      {
+        "description": "Document defines its Metadata in an embedded XML file",
+        "name": "edr_contains_meta_data_xml",
+        "severity": 1
+      },
+      {
+        "description": "Document contains a Cross-Reference Table Stream implementation",
+        "name": "edr_contains_xref_stream",
+        "severity": 1
+      },
+      {
+        "description": "Document file size is small",
+        "name": "edr_info_file_size_small",
+        "severity": 1
+      },
+      {
+        "description": "Document has a small number of pages",
+        "name": "edr_info_page_count_small",
+        "severity": 1
+      }
+    ],
+    "analysis_type": "static",
+    "detection": {
+      "permalink": "https://www.virustotal.com/gui/file/6b22904a7de5b77bf40598c37e94e01771485e1b900651b58bf50af7009f8056/detection/f-6b22904a7de5b77bf40598c37e94e01771485e1b900651b58bf50af7009f8056-1736339502",
+      "positives": 0,
+      "sophos": "",
+      "sophos_ml": "",
+      "total": 63
+    },
+    "document_analysis": {
+      "meta_data": {
+        "bytes": 581407,
+        "content_type": "PDF",
+        "create_time": "2016-12-22T11:43:55Z",
+        "language": "en-US",
+        "last_saved_time": "2016-12-29T15:47:20Z",
+        "num_pages": 1,
+        "version": 1.4
+      }
+    },
+    "feature_analysis": {
+      "ioc_details": {
+        "edr_info_file_size_small": [
+          {
+            "ioc": 581407,
+            "type": "int"
+          }
+        ],
+        "edr_info_page_count_small": [
+          {
+            "ioc": 1,
+            "type": "int"
+          }
+        ]
+      }
+    },
+    "linked_with_dynamic_analysis": false,
+    "ml_aggregate_results": {
+      "overall_score": 3
+    },
+    "ml_file": {
+      "analyses": {
+        "black_box": {
+          "benign": {
+            "raw": 1.71661376953125e-05,
+            "score": 3
+          },
+          "model_name": "dsml_model_pdf",
+          "model_version": "20240802"
+        },
+        "feature_intersections": [
+          {
+            "benign": 4089430,
+            "benign_fraction": 0.4089430508282606,
+            "category": "severity=1",
+            "description": "Feature Observed: Document has a small number of pages",
+            "indicator": "Feature Observed: Document has a small number of pages --> severity=1",
+            "malware": 5418961,
+            "malware_fraction": 0.5418961527351907,
+            "probability": 0.5699135571023276,
+            "scale_factor": 10000000
+          },
+          {
+            "benign": 3035391,
+            "benign_fraction": 0.30353911116604537,
+            "category": "severity=1",
+            "description": "Feature NOT Observed: Document contains links to external domains",
+            "indicator": "Feature NOT Observed: Document contains links to external domains --> severity=1",
+            "malware": 15007,
+            "malware_fraction": 0.0015007708964717404,
+            "probability": 0.004919916983721366,
+            "scale_factor": 10000000
+          },
+          {
+            "benign": 3035266,
+            "benign_fraction": 0.30352661518707647,
+            "category": "severity=2",
+            "description": "Feature NOT Observed: Document contains suspicious javascript",
+            "indicator": "Feature NOT Observed: Document contains suspicious javascript --> severity=2",
+            "malware": 5192,
+            "malware_fraction": 0.0005192427481379911,
+            "probability": 0.0017077777400560097,
+            "scale_factor": 10000000
+          },
+          {
+            "benign": 3026622,
+            "benign_fraction": 0.30266225047013884,
+            "category": "severity=2",
+            "description": "Feature NOT Observed: Document contains javascript",
+            "indicator": "Feature NOT Observed: Document contains javascript --> severity=2",
+            "malware": 3445,
+            "malware_fraction": 0.0003445840662210221,
+            "probability": 0.001137215491354447,
+            "scale_factor": 10000000
+          }
+        ],
+        "feature_maliciousness": {
+          "Document file size is small --> severity=1": {
+            "benign": 7120119,
+            "benign_fraction": 0.7120119817558322,
+            "category": "severity=1",
+            "description": "Document file size is small",
+            "indicator": "Document file size is small --> severity=1",
+            "malware": 9899084,
+            "malware_fraction": 0.9899084471664678,
+            "probability": 0.581642026468478,
+            "scale_factor": 10000000
+          },
+          "Document has a small number of pages --> severity=1": {
+            "benign": 4086919,
+            "benign_fraction": 0.40869198927301453,
+            "category": "severity=1",
+            "description": "Document has a small number of pages",
+            "indicator": "Document has a small number of pages --> severity=1",
+            "malware": 5416129,
+            "malware_fraction": 0.5416129670799382,
+            "probability": 0.569935959461394,
+            "scale_factor": 10000000
+          }
+        },
+        "genetic_analysis": {
+          "neighbor_info": {
+            "499f2fbf592d5839e09ecdfe652ba47dcc4e09068cc7ef21a1529b9b70ced4b5": {
+              "filepath": "499f2fbf592d5839e09ecdfe652ba47dcc4e09068cc7ef21a1529b9b70ced4b5",
+              "is_malware": false,
+              "match_percentage": 0.71875,
+              "score": 98.10354
+            },
+            "4e13e6432f92853ba2873c87ad5be5de830d6c5072ee5110fd332a716b8bff71": {
+              "filepath": "4e13e6432f92853ba2873c87ad5be5de830d6c5072ee5110fd332a716b8bff71",
+              "is_malware": false,
+              "match_percentage": 0.75,
+              "score": 103.93552
+            },
+            "5b25ba7a12835893abe29f2cf2de9cf39f7684c20dbade83101b63e1694c0bb9": {
+              "filepath": "5b25ba7a12835893abe29f2cf2de9cf39f7684c20dbade83101b63e1694c0bb9",
+              "is_malware": false,
+              "match_percentage": 0.75,
+              "score": 100.99327
+            },
+            "6b22904a7de5b77bf40598c37e94e01771485e1b900651b58bf50af7009f8056": {
+              "filepath": "6b22904a7de5b77bf40598c37e94e01771485e1b900651b58bf50af7009f8056",
+              "is_malware": false,
+              "match_percentage": 1,
+              "score": 145.607
+            },
+            "ad3f3a11a6590d6a444d83aed314db0833fe0383451e4fdec43c20a6706df456": {
+              "filepath": "ad3f3a11a6590d6a444d83aed314db0833fe0383451e4fdec43c20a6706df456",
+              "is_malware": false,
+              "match_percentage": 0.71875,
+              "score": 98.87735
+            },
+            "b76714543eb02c456c144d1c3d937c169b0931185abc988ecc12fb923f5c18fb": {
+              "filepath": "b76714543eb02c456c144d1c3d937c169b0931185abc988ecc12fb923f5c18fb",
+              "is_malware": false,
+              "match_percentage": 0.71875,
+              "score": 97.74747
+            }
+          },
+          "neighbor_matrix": {
+            "499f2fbf592d5839e09ecdfe652ba47dcc4e09068cc7ef21a1529b9b70ced4b5": {
+              "0_7423": true,
+              "10_4637": true,
+              "11_5662": false,
+              "12_4238": true,
+              "13_6049": false,
+              "14_5679": false,
+              "15_8253": true,
+              "16_4844": true,
+              "17_5026": true,
+              "18_6298": true,
+              "19_5031": true,
+              "1_8053": false,
+              "20_6114": true,
+              "21_5030": true,
+              "22_5318": true,
+              "23_7279": false,
+              "24_6315": true,
+              "25_7422": true,
+              "26_6949": false,
+              "27_5075": true,
+              "28_7311": false,
+              "29_6035": true,
+              "2_4520": true,
+              "30_6802": true,
+              "31_6247": true,
+              "3_6995": false,
+              "4_5530": true,
+              "5_5934": true,
+              "6_7271": false,
+              "7_6632": true,
+              "8_6830": true,
+              "9_6798": true
+            },
+            "4e13e6432f92853ba2873c87ad5be5de830d6c5072ee5110fd332a716b8bff71": {
+              "0_7423": true,
+              "10_4637": false,
+              "11_5662": true,
+              "12_4238": false,
+              "13_6049": false,
+              "14_5679": true,
+              "15_8253": false,
+              "16_4844": true,
+              "17_5026": true,
+              "18_6298": true,
+              "19_5031": true,
+              "1_8053": true,
+              "20_6114": true,
+              "21_5030": true,
+              "22_5318": true,
+              "23_7279": true,
+              "24_6315": true,
+              "25_7422": true,
+              "26_6949": false,
+              "27_5075": true,
+              "28_7311": false,
+              "29_6035": true,
+              "2_4520": true,
+              "30_6802": true,
+              "31_6247": false,
+              "3_6995": true,
+              "4_5530": true,
+              "5_5934": true,
+              "6_7271": true,
+              "7_6632": true,
+              "8_6830": true,
+              "9_6798": false
+            },
+            "5b25ba7a12835893abe29f2cf2de9cf39f7684c20dbade83101b63e1694c0bb9": {
+              "0_7423": true,
+              "10_4637": true,
+              "11_5662": false,
+              "12_4238": true,
+              "13_6049": false,
+              "14_5679": true,
+              "15_8253": true,
+              "16_4844": true,
+              "17_5026": true,
+              "18_6298": true,
+              "19_5031": true,
+              "1_8053": false,
+              "20_6114": true,
+              "21_5030": true,
+              "22_5318": false,
+              "23_7279": true,
+              "24_6315": true,
+              "25_7422": true,
+              "26_6949": true,
+              "27_5075": true,
+              "28_7311": false,
+              "29_6035": true,
+              "2_4520": true,
+              "30_6802": true,
+              "31_6247": false,
+              "3_6995": true,
+              "4_5530": false,
+              "5_5934": true,
+              "6_7271": true,
+              "7_6632": false,
+              "8_6830": true,
+              "9_6798": true
+            },
+            "6b22904a7de5b77bf40598c37e94e01771485e1b900651b58bf50af7009f8056": {
+              "0_7423": true,
+              "10_4637": true,
+              "11_5662": true,
+              "12_4238": true,
+              "13_6049": true,
+              "14_5679": true,
+              "15_8253": true,
+              "16_4844": true,
+              "17_5026": true,
+              "18_6298": true,
+              "19_5031": true,
+              "1_8053": true,
+              "20_6114": true,
+              "21_5030": true,
+              "22_5318": true,
+              "23_7279": true,
+              "24_6315": true,
+              "25_7422": true,
+              "26_6949": true,
+              "27_5075": true,
+              "28_7311": true,
+              "29_6035": true,
+              "2_4520": true,
+              "30_6802": true,
+              "31_6247": true,
+              "3_6995": true,
+              "4_5530": true,
+              "5_5934": true,
+              "6_7271": true,
+              "7_6632": true,
+              "8_6830": true,
+              "9_6798": true
+            },
+            "ad3f3a11a6590d6a444d83aed314db0833fe0383451e4fdec43c20a6706df456": {
+              "0_7423": true,
+              "10_4637": true,
+              "11_5662": true,
+              "12_4238": false,
+              "13_6049": false,
+              "14_5679": true,
+              "15_8253": true,
+              "16_4844": true,
+              "17_5026": true,
+              "18_6298": true,
+              "19_5031": true,
+              "1_8053": false,
+              "20_6114": true,
+              "21_5030": true,
+              "22_5318": false,
+              "23_7279": true,
+              "24_6315": true,
+              "25_7422": true,
+              "26_6949": true,
+              "27_5075": false,
+              "28_7311": false,
+              "29_6035": false,
+              "2_4520": true,
+              "30_6802": true,
+              "31_6247": false,
+              "3_6995": false,
+              "4_5530": true,
+              "5_5934": true,
+              "6_7271": true,
+              "7_6632": true,
+              "8_6830": true,
+              "9_6798": true
+            },
+            "b76714543eb02c456c144d1c3d937c169b0931185abc988ecc12fb923f5c18fb": {
+              "0_7423": true,
+              "10_4637": true,
+              "11_5662": true,
+              "12_4238": true,
+              "13_6049": false,
+              "14_5679": false,
+              "15_8253": true,
+              "16_4844": false,
+              "17_5026": true,
+              "18_6298": true,
+              "19_5031": false,
+              "1_8053": true,
+              "20_6114": true,
+              "21_5030": false,
+              "22_5318": true,
+              "23_7279": true,
+              "24_6315": true,
+              "25_7422": true,
+              "26_6949": true,
+              "27_5075": true,
+              "28_7311": false,
+              "29_6035": true,
+              "2_4520": true,
+              "30_6802": true,
+              "31_6247": false,
+              "3_6995": true,
+              "4_5530": true,
+              "5_5934": false,
+              "6_7271": false,
+              "7_6632": true,
+              "8_6830": true,
+              "9_6798": true
+            }
+          }
+        }
+      },
+      "analyzed_counts": {
+        "black_box": {
+          "benign": 24686085,
+          "malware": 22567062
+        },
+        "feature_intersections": {
+          "benign": 2798922,
+          "malware": 6340055
+        },
+        "feature_maliciousness": {
+          "benign": 2798922,
+          "malware": 6340055
+        },
+        "genetic_analysis": {
+          "benign": 3908143,
+          "malware": 3992241
+        }
+      },
+      "overall_score": 3,
+      "overall_scores": {
+        "black_box": 3,
+        "feature_intersections": 4,
+        "feature_maliciousness": 4,
+        "genetic_analysis": 0
+      }
+    },
+    "ml_filepath": {
+      "analyses": {
+        "neighbor_maliciousness": {
+          "most_similar": [],
+          "most_similar_benign": [],
+          "most_similar_malware": []
+        }
+      },
+      "analyzed_counts": {
+        "neighbor_maliciousness": {
+          "benign": -1,
+          "malware": -1
+        }
+      },
+      "overall_score": -1,
+      "overall_scores": {
+        "neighbor_maliciousness": -1
+      }
+    },
+    "ml_inputs": {
+      "filepath": null
+    },
+    "object_type": "file",
+    "reputation": {
+      "first_seen": "2025-06-16T15:39:06",
+      "last_seen": "2025-06-16T15:39:06",
+      "prevalence": "Low",
+      "score": 31,
+      "score_string": "Unknown reputation"
+    },
+    "schema_version": "1.1.33554432",
+    "score": 50,
+    "submission": "2025-07-20T20:19:45Z",
+    "target": {
+      "file_name": "sample.pdf",
+      "mime_type": "application/pdf",
+      "object_id": "6b22904a7de5b77bf40598c37e94e01771485e1b900651b58bf50af7009f8056",
+      "sha1": "9c66d2d11a2762c75136b081d0c9e9035eef0fbf",
+      "sha256": "6b22904a7de5b77bf40598c37e94e01771485e1b900651b58bf50af7009f8056"
+    }
+  },
+  "requestId": "9d581876-2532-400f-9a77-4d0fd13d3ce1"
+}

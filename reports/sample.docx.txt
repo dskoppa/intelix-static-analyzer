@@ -1,0 +1,425 @@
+{
+  "jobId": "74fcdf1a9ed5bb072b0d0c351c803085",
+  "jobStatus": "SUCCESS",
+  "report": {
+    "analysis_subject": {
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sha1": "a3c93f99f5758787b6ef9c481e5cd1d7d33f2ac9",
+      "sha256": "40258ea32f3175c3a91cab65dd6a7eddeb94180edd186ad882ca51b8b0dfa7b4"
+    },
+    "analysis_summary": [
+      {
+        "description": "Document saved in the '2007 Office Open XML' format",
+        "name": "edr_document_file_format_zip",
+        "severity": 1
+      },
+      {
+        "description": "Document has missing metadata fields",
+        "name": "edr_missing_meta_data_content",
+        "severity": 1
+      }
+    ],
+    "analysis_type": "static",
+    "detection": {
+      "permalink": "https://www.virustotal.com/gui/file/40258ea32f3175c3a91cab65dd6a7eddeb94180edd186ad882ca51b8b0dfa7b4/detection/f-40258ea32f3175c3a91cab65dd6a7eddeb94180edd186ad882ca51b8b0dfa7b4-1747956883",
+      "positives": 0,
+      "sophos": "",
+      "sophos_ml": "",
+      "total": 66
+    },
+    "document_analysis": {
+      "meta_data": {
+        "author": "train11",
+        "company": "University of Leicester",
+        "creating_application": "Microsoft Macintosh Word",
+        "last_saved_by": "Microsoft Office User",
+        "revision_number": "2",
+        "template": "Normal.dotm"
+      }
+    },
+    "feature_analysis": {
+      "ioc_details": {
+        "edr_missing_meta_data_content": [
+          {
+            "ioc": [
+              "codepage",
+              "create_time",
+              "last_saved_time",
+              "total_edit_time",
+              "version",
+              "num_pages",
+              "num_words",
+              "num_chars"
+            ],
+            "type": "str"
+          }
+        ]
+      }
+    },
+    "linked_with_dynamic_analysis": false,
+    "ml_aggregate_results": {
+      "overall_score": 12
+    },
+    "ml_file": {
+      "analyses": {
+        "black_box": {
+          "benign": {
+            "raw": 0.011979877948760986,
+            "score": 12
+          },
+          "model_name": "dsml_model_office",
+          "model_version": "20250101"
+        },
+        "feature_intersections": [
+          {
+            "benign": 9984631,
+            "benign_fraction": 0.9984631628961441,
+            "category": "severity=2",
+            "description": "Feature NOT Observed: Spreadsheet contains Excel Formula macros",
+            "indicator": "Feature NOT Observed: Spreadsheet contains Excel Formula macros --> severity=2",
+            "malware": 5992467,
+            "malware_fraction": 0.5992467501194967,
+            "probability": 0.3750660525028803,
+            "scale_factor": 10000000
+          },
+          {
+            "benign": 1575568,
+            "benign_fraction": 0.15755685036197992,
+            "category": "severity=2",
+            "description": "Feature NOT Observed: Document references content stored on a remote computer",
+            "indicator": "Feature NOT Observed: Document references content stored on a remote computer --> severity=2",
+            "malware": 1358210,
+            "malware_fraction": 0.1358210329268027,
+            "probability": 0.46295593725144263,
+            "scale_factor": 10000000
+          }
+        ],
+        "feature_maliciousness": {
+          "Document has missing metadata fields --> severity=1": {
+            "benign": 5134231,
+            "benign_fraction": 0.5134231313912075,
+            "category": "severity=1",
+            "description": "Document has missing metadata fields",
+            "indicator": "Document has missing metadata fields --> severity=1",
+            "malware": 7603728,
+            "malware_fraction": 0.7603728872338089,
+            "probability": 0.5969345767421883,
+            "scale_factor": 10000000
+          }
+        },
+        "genetic_analysis": {
+          "neighbor_info": {
+            "20bfa51de9856c6d521f8e658a02854c8d262935d058979ab77a75ce53d1829b": {
+              "filepath": "20bfa51de9856c6d521f8e658a02854c8d262935d058979ab77a75ce53d1829b",
+              "is_malware": false,
+              "match_percentage": 0.375,
+              "score": 83.90055
+            },
+            "26889a5f5da67e7efab38affaa31bb61f2990393ac1da92c520f17fc0a67387e": {
+              "filepath": "26889a5f5da67e7efab38affaa31bb61f2990393ac1da92c520f17fc0a67387e",
+              "is_malware": false,
+              "match_percentage": 0.5,
+              "score": 114.10244
+            },
+            "2a01903ee6ac3b56cf8b704ed91366a8c74dde64d29736f8e9c5d93c8f5ea27b": {
+              "filepath": "2a01903ee6ac3b56cf8b704ed91366a8c74dde64d29736f8e9c5d93c8f5ea27b",
+              "is_malware": false,
+              "match_percentage": 0.375,
+              "score": 86.7901
+            },
+            "2e871565ef79951b48fcc421f257ecc49c2b1d9596c0c9674f0625a811bef76a": {
+              "filepath": "2e871565ef79951b48fcc421f257ecc49c2b1d9596c0c9674f0625a811bef76a",
+              "is_malware": false,
+              "match_percentage": 0.4375,
+              "score": 98.33856
+            },
+            "39167c9906431b2a0e7b18208cce2b50dee7431678aaf774cb56be04a6173d0f": {
+              "filepath": "39167c9906431b2a0e7b18208cce2b50dee7431678aaf774cb56be04a6173d0f",
+              "is_malware": false,
+              "match_percentage": 0.375,
+              "score": 85.055435
+            },
+            "3e85c76ac9730ceea3ea3fbcef9c78c9d23e1eb77759f56a2def470bcb4901e1": {
+              "filepath": "3e85c76ac9730ceea3ea3fbcef9c78c9d23e1eb77759f56a2def470bcb4901e1",
+              "is_malware": false,
+              "match_percentage": 0.375,
+              "score": 83.97432
+            }
+          },
+          "neighbor_matrix": {
+            "20bfa51de9856c6d521f8e658a02854c8d262935d058979ab77a75ce53d1829b": {
+              "0_20138": false,
+              "10_9857": false,
+              "11_9459": true,
+              "12_10558": false,
+              "13_15358": false,
+              "14_20730": true,
+              "15_10657": false,
+              "16_10470": false,
+              "17_10508": false,
+              "18_11283": true,
+              "19_9666": false,
+              "1_10147": false,
+              "20_9376": true,
+              "21_10565": true,
+              "22_15358": false,
+              "23_9995": true,
+              "24_17207": false,
+              "25_10586": true,
+              "26_13659": false,
+              "27_10139": false,
+              "28_9648": false,
+              "29_11272": true,
+              "2_7958": true,
+              "30_13470": false,
+              "31_14741": false,
+              "3_14196": false,
+              "4_14273": true,
+              "5_15080": true,
+              "6_15764": false,
+              "7_15693": false,
+              "8_12399": true,
+              "9_20192": false
+            },
+            "26889a5f5da67e7efab38affaa31bb61f2990393ac1da92c520f17fc0a67387e": {
+              "0_20138": true,
+              "10_9857": false,
+              "11_9459": true,
+              "12_10558": true,
+              "13_15358": false,
+              "14_20730": true,
+              "15_10657": false,
+              "16_10470": false,
+              "17_10508": true,
+              "18_11283": true,
+              "19_9666": false,
+              "1_10147": true,
+              "20_9376": true,
+              "21_10565": true,
+              "22_15358": false,
+              "23_9995": true,
+              "24_17207": true,
+              "25_10586": true,
+              "26_13659": false,
+              "27_10139": true,
+              "28_9648": false,
+              "29_11272": false,
+              "2_7958": true,
+              "30_13470": false,
+              "31_14741": false,
+              "3_14196": false,
+              "4_14273": false,
+              "5_15080": true,
+              "6_15764": false,
+              "7_15693": false,
+              "8_12399": true,
+              "9_20192": false
+            },
+            "2a01903ee6ac3b56cf8b704ed91366a8c74dde64d29736f8e9c5d93c8f5ea27b": {
+              "0_20138": false,
+              "10_9857": false,
+              "11_9459": true,
+              "12_10558": true,
+              "13_15358": false,
+              "14_20730": true,
+              "15_10657": false,
+              "16_10470": false,
+              "17_10508": false,
+              "18_11283": false,
+              "19_9666": false,
+              "1_10147": false,
+              "20_9376": false,
+              "21_10565": true,
+              "22_15358": false,
+              "23_9995": true,
+              "24_17207": true,
+              "25_10586": false,
+              "26_13659": true,
+              "27_10139": false,
+              "28_9648": true,
+              "29_11272": true,
+              "2_7958": true,
+              "30_13470": true,
+              "31_14741": false,
+              "3_14196": false,
+              "4_14273": true,
+              "5_15080": false,
+              "6_15764": false,
+              "7_15693": false,
+              "8_12399": false,
+              "9_20192": false
+            },
+            "2e871565ef79951b48fcc421f257ecc49c2b1d9596c0c9674f0625a811bef76a": {
+              "0_20138": false,
+              "10_9857": false,
+              "11_9459": true,
+              "12_10558": true,
+              "13_15358": false,
+              "14_20730": false,
+              "15_10657": false,
+              "16_10470": false,
+              "17_10508": true,
+              "18_11283": false,
+              "19_9666": false,
+              "1_10147": false,
+              "20_9376": false,
+              "21_10565": true,
+              "22_15358": false,
+              "23_9995": true,
+              "24_17207": true,
+              "25_10586": false,
+              "26_13659": false,
+              "27_10139": true,
+              "28_9648": true,
+              "29_11272": true,
+              "2_7958": false,
+              "30_13470": false,
+              "31_14741": true,
+              "3_14196": true,
+              "4_14273": true,
+              "5_15080": true,
+              "6_15764": false,
+              "7_15693": false,
+              "8_12399": true,
+              "9_20192": false
+            },
+            "39167c9906431b2a0e7b18208cce2b50dee7431678aaf774cb56be04a6173d0f": {
+              "0_20138": true,
+              "10_9857": false,
+              "11_9459": true,
+              "12_10558": true,
+              "13_15358": false,
+              "14_20730": true,
+              "15_10657": false,
+              "16_10470": false,
+              "17_10508": false,
+              "18_11283": false,
+              "19_9666": false,
+              "1_10147": true,
+              "20_9376": false,
+              "21_10565": true,
+              "22_15358": false,
+              "23_9995": true,
+              "24_17207": false,
+              "25_10586": false,
+              "26_13659": false,
+              "27_10139": false,
+              "28_9648": false,
+              "29_11272": true,
+              "2_7958": false,
+              "30_13470": true,
+              "31_14741": true,
+              "3_14196": false,
+              "4_14273": false,
+              "5_15080": false,
+              "6_15764": false,
+              "7_15693": false,
+              "8_12399": true,
+              "9_20192": true
+            },
+            "3e85c76ac9730ceea3ea3fbcef9c78c9d23e1eb77759f56a2def470bcb4901e1": {
+              "0_20138": false,
+              "10_9857": false,
+              "11_9459": true,
+              "12_10558": true,
+              "13_15358": false,
+              "14_20730": false,
+              "15_10657": false,
+              "16_10470": false,
+              "17_10508": true,
+              "18_11283": false,
+              "19_9666": false,
+              "1_10147": true,
+              "20_9376": true,
+              "21_10565": true,
+              "22_15358": false,
+              "23_9995": true,
+              "24_17207": true,
+              "25_10586": false,
+              "26_13659": false,
+              "27_10139": false,
+              "28_9648": false,
+              "29_11272": false,
+              "2_7958": false,
+              "30_13470": false,
+              "31_14741": false,
+              "3_14196": false,
+              "4_14273": true,
+              "5_15080": true,
+              "6_15764": true,
+              "7_15693": false,
+              "8_12399": true,
+              "9_20192": false
+            }
+          }
+        }
+      },
+      "analyzed_counts": {
+        "black_box": {
+          "benign": 32699842,
+          "malware": 2440554
+        },
+        "feature_intersections": {
+          "benign": 3606908,
+          "malware": 847763
+        },
+        "feature_maliciousness": {
+          "benign": 3606908,
+          "malware": 847763
+        },
+        "genetic_analysis": {
+          "benign": 7427092,
+          "malware": 2290827
+        }
+      },
+      "overall_score": 12,
+      "overall_scores": {
+        "black_box": 12,
+        "feature_intersections": 10,
+        "feature_maliciousness": 10,
+        "genetic_analysis": 6
+      }
+    },
+    "ml_filepath": {
+      "analyses": {
+        "neighbor_maliciousness": {
+          "most_similar": [],
+          "most_similar_benign": [],
+          "most_similar_malware": []
+        }
+      },
+      "analyzed_counts": {
+        "neighbor_maliciousness": {
+          "benign": -1,
+          "malware": -1
+        }
+      },
+      "overall_score": -1,
+      "overall_scores": {
+        "neighbor_maliciousness": -1
+      }
+    },
+    "ml_inputs": {
+      "filepath": null
+    },
+    "object_type": "file",
+    "reputation": {
+      "first_seen": "2025-06-16T15:38:54",
+      "last_seen": "2025-06-16T15:38:54",
+      "prevalence": "Low",
+      "score": 31,
+      "score_string": "Unknown reputation"
+    },
+    "schema_version": "1.1.33554432",
+    "score": 60,
+    "submission": "2025-07-20T20:19:47Z",
+    "target": {
+      "file_name": "sample.docx",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "object_id": "40258ea32f3175c3a91cab65dd6a7eddeb94180edd186ad882ca51b8b0dfa7b4",
+      "sha1": "a3c93f99f5758787b6ef9c481e5cd1d7d33f2ac9",
+      "sha256": "40258ea32f3175c3a91cab65dd6a7eddeb94180edd186ad882ca51b8b0dfa7b4"
+    }
+  },
+  "requestId": "a36e2189-681d-42b9-b369-116843a0f178"
+}

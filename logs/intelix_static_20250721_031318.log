@@ -1,0 +1,13 @@
+2025-07-21 03:13:18,123 [INFO] 🔍 Starting SophosLabs Intelix static file analysis...
+2025-07-21 03:13:18,123 [INFO] 🔐 Requesting OAuth access token...
+2025-07-21 03:13:20,017 [INFO] ✅ Access token successfully retrieved.
+2025-07-21 03:13:20,023 [INFO] 📤 Submitting file: sample.exe
+2025-07-21 03:13:23,642 [INFO] ⏳ Waiting for report for job: 57e103b9ff89bad73aaa3b20aacec1a5
+2025-07-21 03:13:26,048 [INFO] 📄 Report saved: ./reports/sample.exe.txt
+2025-07-21 03:13:26,048 [INFO] 📤 Submitting file: sample.pdf
+2025-07-21 03:13:28,475 [INFO] ⏳ Waiting for report for job: 6554d91b1661bb7132d6c4b951f47dcf
+2025-07-21 03:13:29,298 [INFO] 📄 Report saved: ./reports/sample.pdf.txt
+2025-07-21 03:13:29,298 [INFO] 📤 Submitting file: sample.docx
+2025-07-21 03:13:30,798 [INFO] ⏳ Waiting for report for job: 74fcdf1a9ed5bb072b0d0c351c803085
+2025-07-21 03:13:31,682 [INFO] 📄 Report saved: ./reports/sample.docx.txt
+2025-07-21 03:13:31,682 [INFO] ✅ All file submissions and reports complete.
